@@ -6,9 +6,9 @@ This is a summary of WGS analysis of fluorescently-tagged *C. albicans*
 isolates for variant detection during parallel evolution experiments in the presence and absence of antifungal drugs.
 
 ### Illumina read trimming, alignment and QC
-Adapter trimming, followed by contaminant checking and quality trimming was performed for all fastq files using BBDuk (part of BBTools, v38.94). Reads were aligned to *C. albicans* SC5314 reference genome, version A21-s02-m09-r08 using BWA-MEM (v0.7.17). Aligned reads were sorted by coordinate, duplicates were marked and bam files indexed by samtools (v1.10) (see script "array_bbduk_align_sort.sh").
+Adapter trimming, contaminant checking and quality trimming were performed for all fastq files using BBDuk (part of BBTools, v38.94). Reads were aligned to *C. albicans* SC5314 reference genome, version A21-s02-m09-r08 using BWA-MEM (v0.7.17). Aligned reads were sorted by coordinate, duplicates were marked and bam files indexed by samtools (v1.10) (see script "array_bbduk_align_sort.sh").
 
-Raw read and alignment quality were assessed with FastQC (v0.11.9), qualimap (v.2.2.2-dev) and samtools flagstat, and summarized with MultiQC (v1.16) (see script "basic_qc.sh").
+Raw read and alignment quality were assessed with FastQC (v0.11.9), qualimap (v.2.2.2-dev) and samtools (v1.10) flagstat, and summarized with MultiQC (v1.16) (see script "basic_qc.sh").
 
 ### Variant calling
 
@@ -23,7 +23,7 @@ Variant calling was run in 3 batches corresponding to progenitor strains
 See scripts "array_mutect2_sc5314.sh", "array_mutect2_ams5178.sh" and "array_mutect2_ams5192.sh" for details.
 
 ### Variant filtering
-Additional VCF filtering was performed with bcftools (v1.17). Individual mutect2 vcf files were then subset to remove the progenitor strain, and filtered on quality = "PASS" (see "array_filter_individual_vcf.sh"). Groups of individual VCFs were merged into 3 files based on their progenitor (SC5314, AMS5178 and AMS5192). Merged files were subset to exclude repeat regions (those marked in the SC5314 A21 GFF) and 5000 bp subtelomeric regions, and then filtered on the following parameters:
+Additional VCF filtering was performed with bcftools (v1.17). Individual mutect2 vcf files were then subset to remove the progenitor strain, and filtered on quality = "PASS" (see "array_filter_individual_vcf.sh"). Groups of individual VCFs were merged into 3 different files based on their progenitor (SC5314, AMS5178 and AMS5192). Merged files were subset to exclude repeat regions (those marked in the SC5314 A21 GFF) and 5000 bp subtelomeric regions, and then filtered on the following parameters:
 
 -   At least 5 supporting reads for alternate alleles
 -   Supporting reads in both directions
