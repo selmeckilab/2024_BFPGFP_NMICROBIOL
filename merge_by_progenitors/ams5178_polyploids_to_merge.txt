@@ -1,0 +1,12 @@
+pass_vcfs/AMS5647_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5651_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5652_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5711_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5712_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5713_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5714_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5716_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5717_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5718_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5719_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5874_mutect2_filtered_pass_norm.vcf.gz

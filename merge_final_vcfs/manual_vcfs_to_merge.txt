@@ -1,0 +1,3 @@
+./AMS5178_manual.vcf.gz
+./AMS5192_manual.vcf.gz
+./SC5314_manual.vcf.gz

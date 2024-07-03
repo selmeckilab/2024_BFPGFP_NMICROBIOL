@@ -1,0 +1,4 @@
+pass_vcfs/AMS4605_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5178_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS5192_mutect2_filtered_pass_norm.vcf.gz
+pass_vcfs/AMS6067_mutect2_filtered_pass_norm.vcf.gz
