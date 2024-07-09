@@ -24,7 +24,7 @@ Variant calling was run in 3 batches corresponding to progenitor strains
 See scripts "array_mutect2_sc5314.sh", "array_mutect2_ams5178.sh" and "array_mutect2_ams5192.sh" for details.
 
 ### Variant filtering
-Additional VCF filtering was performed with bcftools (v1.17). Individual mutect2 vcf files were then subset to remove the progenitor strain, and filtered on quality = "PASS" (see "array_filter_individual_vcf.sh"). Groups of individual VCFs were merged into 3 different files based on their progenitor (SC5314, AMS5178 and AMS5192). Merged files were subset to exclude repeat regions (those marked in the SC5314 A21 GFF) and 5000 bp subtelomeric regions, and then filtered on the following parameters:
+Additional VCF filtering was performed with bcftools (v1.17). Individual mutect2 vcf files were then subset to remove the progenitor strain, and filtered on quality = "PASS" (see "array_filter_individual_vcf.sh"). Groups of individual VCFs were merged into 3 different files based on their progenitor (SC5314, AMS5178 and AMS5192). Merged files were subset to exclude known repetitive regions as annotated in the SC5314 A21-s02-m09-r08 GFF (rRNA, repeat_region, retrotransposon) and telomere-proximal regions, defined here as extending from each chromosome end to the first non-repetitive genome feature, and then filtered on the following parameters:
 
 -   At least 5 supporting reads for alternate alleles
 -   Supporting reads in both directions
