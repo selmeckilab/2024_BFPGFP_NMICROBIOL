@@ -2,7 +2,7 @@
 
 <br>
 
-Parallel evolution experiments of fluorescently-tagged *C. albicans* were performed in the presence and absence of antifungal drugs
+Parallel evolution experiments of fluorescently-tagged *C. albicans* were performed in the presence and absence of antifungal drugs.
 
 This repository summarizes variant detection from WGS data and visualization of population dynamics from flow cytometry data.
 
@@ -36,5 +36,5 @@ Variants were annotated with snpEff (v5.0e, database built from SC5314 version A
 ### Manual curation of variants
 Variants were visually inspected in IGV (v2.16.1) for each of the three groups of evolved isolates. Working copies of each VCF file were edited to exclude false positives identified during manual review. The manually-curated VCFs were merged to a single, final variant file including all 120 strains, and the merged VCF was annotated with gene names (see "merge_filtered_vcfs.sh"). A CSV file of manually curated, annotated variants was produced from the final VCF (see "variant_subset_table.sh").
 
-### Visualization of flow data
+### Visualization of flow cytometry data
 Flow cytometry data of Chr3 BFP/GFP and Chr5 BFP/GFP evolved lineages were collected at passages 0, 1, 5, 10, 12 and 15. Fractions of five different types of fluorescent cells were calculated and plotted in R (see "Stacked_area_script.R").
