@@ -1,4 +1,4 @@
-## Single-cell detection of copy number changes reveals dynamic mechanisms of adaptation to antifungals *in vitro* and *in vivo*
+## Single-cell detection of copy number changes reveals dynamic mechanisms of adaptation to antifungals in Candida albicans
 
 <br>
 
