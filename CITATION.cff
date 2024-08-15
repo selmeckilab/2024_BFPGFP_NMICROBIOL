@@ -1,0 +1,24 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ' 2024_BFPGFP_NMICROBIOL Public'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Xin
+    family-names: Zhou
+    email: zxin@umn.edu
+    affiliation: University of Minnesota
+  - given-names: Nancy
+    family-names: Scott
+    email: scot0854@umn.edu
+    affiliation: University of Minnesota
+    orcid: 'https://orcid.org/0000-0003-1678-0796'
+  - given-names: Anna
+    family-names: Selmecki
+    email: selmecki@umn.edu
+    affiliation: University of Minnesota
+    orcid: 'https://orcid.org/0000-0003-3298-2400'
