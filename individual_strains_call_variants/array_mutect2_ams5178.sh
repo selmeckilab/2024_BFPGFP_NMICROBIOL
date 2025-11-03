@@ -14,8 +14,8 @@ set -o pipefail
 
 ref_fasta=/home/selmecki/shared/disaster_recovery/Reference_Genomes/SC5314_A21/C_albicans_SC5314_version_A21-s02-m09-r08_chromosomes.fasta
 sample_file=ams5178_bam_files.txt
-normal_bam=bam/AMS2401_trimmed_bwa_sorted_markdup.bam
-normal_name=AMS2401
+normal_bam=bam/AMS25178_trimmed_bwa_sorted_markdup.bam
+normal_name=AMS5178
 line=${SLURM_ARRAY_TASK_ID}
 
 # Load modules
